@@ -4,20 +4,27 @@
 <head>
   <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Uma biblioteca para Jquery-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
 
-
+  <!-- Viewports de responsividade para JavaScript-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
 
   <title>Portfólio DMSK</title>
 </head>
 
 <body>
-            <script src="assets/js/smooth.js"></script>
 
-  <header>
+
+
+
+  <header id="entrada">
+  <div class="header">
    <div class="container menu-principal">
     <div class="row">
       <div class="col-sm-12 col-lg-2">
@@ -31,7 +38,7 @@
       <nav>
        <ul class="menu centralizar">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#entrada">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#sobre">Sobre</a>
@@ -52,10 +59,11 @@
   <div class="col-sm-12 col-lg-2">
     <div class="redes-sociais">
       <a href="http://fb.com/rodrigo.adamski" target="_blank"><img src="assets/img/fb.png" class="social-icon"/></a>
-      <a href="http://fb.com/rodrigo.adamski" target="_blank"><img src="assets/img/insta.png" class="social-icon" /></a>
-      <a href="http://fb.com/rodrigo.adamski" target="_blank"> <img src="assets/img/link.png" class="social-icon"/></a>
+      <a href="http://instagram.com/rodrigoadamski" target="_blank"><img src="assets/img/insta.png" class="social-icon" /></a>
+      <a href="http://linkedin.com/rodrigo.adamski" target="_blank"> <img src="assets/img/link.png" class="social-icon"/></a>
     </div>
   </div>
+</div>
 </div>
 </div>
 </header>
@@ -68,7 +76,6 @@
         <h2 class="centralizar typp">Lugares<br/>incríveis<br/>clientes<br/>incríveis</h2>
         <p class="subt-slide escuro">Rodrigo Adamski, Desenvolvedor Digital</p>
 
-            <script src="assets/js/type.js"></script>
 
 
         <a href="#sobre"><img src="assets/img/scroll.png" width="auto" class="img-responsive center-block" /></a>
@@ -108,6 +115,9 @@
 
 </section>
 
+
+
+
 <section id="portfolio">
 
   <div class="container">
@@ -117,25 +127,12 @@
         <h3 class="escuro">Portfólio</h3>
       </div>
       <div class="col-sm-6 col-lg-9">
-        <span class="escuro" style="margin-top: -20px;">
-            <ul class="porfolio menu centralizar" >
-          <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIA</a>
-          </li>
-        </ul>
-      </span>
+            <ul class="portfolio-btn">
+  <button data-filter="*">Todos</button>
+  <button data-filter=".websites">Websites</button>
+  <button data-filter=".apps">Aplicativos</button>
+  <button data-filter=".brands">Brands</button>
+</ul>
     </div>
     
   </div>
@@ -144,47 +141,26 @@
     
     <div class="row">
       <div class="col-sm-12 col-lg-12">
-      <ul class="portfolio-bloco">
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-       <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="assets/img/mk01.png" class="porftolio-img" /></a>
-      </li>
-      
-      <!--<li>
-        <img src="assets/img/mk01.png" class="porftolio-img" />
-      </li>-->
-       
-      </ul>
+      <div class="portfolio-grid">
+  <div class="portfolio-wrap">
+       <img src="assets/img/portfolio/apps/app.jpg" alt="#" width="350px" class="apps"/>
+       <img src="assets/img/portfolio/apps/app2.jpg" alt="#" width="350px" class="apps"/>
+       <img src="assets/img/portfolio/apps/app3.jpg" alt="#" width="350px" class="apps"/>
+       <img src="assets/img/portfolio/apps/app4.jpg" alt="#" width="350px" class="apps"/>
+       <img src="assets/img/portfolio/websites/website1.jpg" alt="#" width="350px" class="websites"/>
+       <img src="assets/img/portfolio/websites/website2.jpg" alt="#" width="350px" class="websites"/>
+       <img src="assets/img/portfolio/websites/website3.jpg" alt="#" width="350px" class="websites"/>
+       <img src="assets/img/portfolio/brands/brand1.jpg" alt="#" width="350px" class="brands"/>
+       <img src="assets/img/portfolio/brands/brand2.jpg" alt="#" width="350px" class="brands"/>
+  
+    </div>
+</div>
     </div>
     </div>
 
 </section>
+
+
 
 <section id="depoimentos">
 
@@ -196,8 +172,8 @@
         <blockquote>
          <div class="row centralizar">
             <div class="col-12 col-sm-12 depoimento text-center">
-           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
-            <small>Someone famous</small>
+           <p>"O Rodrigo vem fazendo muita diferença no sucesso do Great Group graças ao olhar estratégico que dá à nossa equipe na hora de estruturar nossas campanhas no Google Adwords e ao fazer intervenções assertivas das análises dos resultados e principalmente na agilidade da implementação das soluções necessárias para melhoria contínua."</p>
+            <small>Carla Lauren - CEO Great Group</small>
           </div>
         </div>
       </blockquote>
@@ -206,7 +182,6 @@
  </div>
  </div>
  </section>
- <section id="depoimentos">
 
 
 
@@ -222,26 +197,17 @@
     </div>
     <div class='bloco-logos'>
     <ul class="portfolio-bloco">
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
-      <li><img src="assets/img/fila.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/adidas.jpg"  class="clientes-logo" /></li>
-      <li><img src="assets/img/puma.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente1.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente2.jpg"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente3.jpg"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente4.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente5.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente6.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente7.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente8.png"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente9.jpg"  class="clientes-logo" /></li>
+      <li><img src="assets/img/clientes/cliente10.png"  class="clientes-logo" /></li>
+      
       </ul>
          </div>
       </div>
@@ -292,6 +258,11 @@
 </div>
 </section>
 </div>
+
+            <script src="assets/js/smooth.js"></script>
+            <script src="assets/js/type.js"></script>
+            <script src="assets/js/portfolio.js"></script>
+            <script src="assets/js/depoimentos.js"></script>
 
 <footer>
   <p style="font-style: italic;font-size: 10pt;">Direitos Reservados | Rodrigo Adamski | 2018</p>
